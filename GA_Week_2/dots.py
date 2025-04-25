@@ -154,7 +154,7 @@ def genetic_algorithm_tsp(distance_matrix, population_size, generations, mutatio
             best_path = best_individual
 
         if generation % 50 == 0:
-            print(f"Generation {generation}: Best Distance = {best_distance}, Fitness = {fitness_scores[0]}")
+            print(f"Generation {generation}: Best Distance = {best_distance}")
 
         # Select elite individuals
         elite_population, elite_count = select_elite(population, fitness_scores, elite_rate)
